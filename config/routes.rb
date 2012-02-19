@@ -1,4 +1,6 @@
 SampleApp::Application.routes.draw do
+  get "users/new"
+
   # get "pages/home"
   #
   # get "pages/contact"
@@ -19,6 +21,8 @@ SampleApp::Application.routes.draw do
   match '/about'   => 'pages#about'
 
   match '/help'    => 'pages#help'
+  
+  match '/signup'  => 'users#new'
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
